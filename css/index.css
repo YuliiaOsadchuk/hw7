@@ -1,0 +1,80 @@
+.square-wrapper{
+    width: 50%;
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px  50px 50px;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-gap: 1vw;
+    padding: 30px 30px;
+}
+
+.square-wrapper .square{
+    background-color: #808080;
+    text-align: center;
+    font-size: 16px;
+}
+
+.square:nth-child(4n+3){
+    background-color: #ff0000;
+}
+
+.square:nth-child(n+21):nth-child(-n+22){
+    background-color: #0000ff;
+}
+
+.square:nth-child(n+24){
+    background-color: #0000ff;
+}
+
+
+.button-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-wrapper .create-btn{
+    width: 501px;
+    height: 92px;
+    border-radius: 100px;
+    background-color: #44D3A8;
+    box-shadow: 0px 4px 4px 0px #000000 25%;
+    outline: none;
+    border: none;
+}
+
+.button-wrapper .create-btn .btn-text{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.button-wrapper::before{
+    content: "";
+    width: 200px;
+    height: 10px;
+    border-top: 2px solid #C4C4C4;
+    border-bottom: 2px solid #C4C4C4;
+    border-left: none;
+    border-right: none;
+    margin-right: 45px;
+}
+
+.button-wrapper::after{
+    content: "";
+    width: 200px;
+    height: 10px;
+    border-top: 2px solid #C4C4C4;
+    border-bottom: 2px solid #C4C4C4;
+    border-left: none;
+    border-right: none;
+    margin-left: 45px;
+}
+
+.button-wrapper .create-btn:hover{
+    border: 3px solid #0000ff;
+}
